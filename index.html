@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/schultztable.css" />
+    <link rel="stylesheet" href="./Styles/cube.css" />
+    <link rel="stylesheet" href="./Styles/highscores.css" />
+    <link rel="stylesheet" href="./Styles/win.css" />
+    <title>Document</title>
+  </head>
+  <body style="user-select: none">
+    <div class="schultz-table-wrapper" id="schultz-table-wrapper">
+      <div class="clock" id="clock">
+        <span class="sec" id="sec">0</span>:<span class="ms" id="ms">00</span>
+      </div>
+      <div class="schultz-table" id="schultz-table">
+        <div class="row" id="row-1">
+          <div class="cube" id="cube-1">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-2">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-3">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-4">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-5">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row-2">
+          <div class="cube" id="cube-6">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0">
+                <span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-7">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-8">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-9">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-10">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row-3">
+          <div class="cube" id="cube-11">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-12">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-13">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-14">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-15">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row-4">
+          <div class="cube" id="cube-16">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-17">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-18">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-19">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-20">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row-5">
+          <div class="cube" id="cube-21">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-22">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-23">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-24">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+          <div class="cube" id="cube-25">
+            <div class="top">
+              <div class="contents" id="contents"></div>
+            </div>
+            <div>
+              <span class="face" style="--i: 0"
+                ><span class="container"></span
+              ></span>
+              <span class="face" style="--i: 1"></span>
+              <span class="face" style="--i: 2"></span>
+              <span class="face" style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-wrapper" id="button-wrapper">
+        <div class="button-wrapper-highscores" id="button-wrapper-highscores">
+          <div
+            class="button button-highscores"
+            id="button-highscores"
+            onclick="fetchHighScores()"
+          >
+            <div class="cube-button" id="cube-button-highscores">
+              <div class="top">
+                <div class="contents" id="contents">High Scores</div>
+              </div>
+              <div>
+                <span class="face" style="--i: 0"
+                  ><span class="container">High Scores</span></span
+                >
+                <span class="face" style="--i: 1"></span>
+                <span class="face" style="--i: 2"></span>
+                <span class="face" style="--i: 3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-wrapper-reset" id="button-wrapper-reset">
+          <div class="button button-reset" id="button-reset">
+            <div class="cube-button" id="cube-button-reset">
+              <div class="top">
+                <div class="contents" id="contents">Reset</div>
+              </div>
+              <div>
+                <span class="face" style="--i: 0"
+                  ><span class="container">Reset</span></span
+                >
+                <span class="face" style="--i: 1"></span>
+                <span class="face" style="--i: 2"></span>
+                <span class="face" style="--i: 3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="high-scores-wrapper hide" id="high-scores-wrapper">
+      <div class="high-scores" id="high-scores">
+        <h1>High Scores</h1>
+        <div class="scores" id="scores">
+          <div class="score" id="score-1">
+            <span class="index" id="index"></span
+            ><span class="name" id="name"></span
+            ><span class="time" id="time"></span>
+          </div>
+          <div class="score" id="score-2">
+            <span class="index" id="index"></span
+            ><span class="name" id="name"></span
+            ><span class="time" id="time"></span>
+          </div>
+          <div class="score" id="score-3">
+            <span class="index" id="index"></span
+            ><span class="name" id="name"></span
+            ><span class="time" id="time"></span>
+          </div>
+          <div class="score" id="score-4">
+            <span class="index" id="index"></span
+            ><span class="name" id="name"></span
+            ><span class="time" id="time"></span>
+          </div>
+          <div class="score" id="score-5">
+            <span class="index" id="index"></span
+            ><span class="name" id="name"></span
+            ><span class="time" id="time"></span>
+          </div>
+        </div>
+      </div>
+      <div class="close-wrapper" id="close-wrapper">
+        <div class="close-button" id="close-button">x</div>
+      </div>
+    </div>
+
+    <!-- <div class="win-wrapper" id="win-wrapper">
+      <div class="win-notif" id="win-notif">
+        <h1>
+          You Won ! <br />
+          Time taken
+        </h1>
+        <h2>20s : 30ms</h2>
+      </div>
+      <div class="close-wrapper" id="close-wrapper">
+        <div class="close-button" id="close-button">x</div>
+      </div>
+    </div> -->
+    <script src="./Scripts/values.js"></script>
+    <script src="./Scripts/highscores.js"></script>
+    <script src="./Scripts/win.js"></script>
+    <script defer src="./Scripts/numbers.js"></script>
+    <script defer src="./Scripts/colors.js"></script>
+    <script defer src="./Scripts/logic.js"></script>
+    <script defer src="./Scripts/clock.js"></script>
+    <script defer src="./Scripts/reset.js"></script>
+  </body>
+</html>

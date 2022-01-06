@@ -1,0 +1,183 @@
+body {
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clock {
+  position: absolute;
+  top: 4em;
+  left: 1.5em;
+  color: white;
+  font-size: 4em;
+}
+
+#cube-1 {
+  margin-top: calc(1 * 5px);
+}
+
+#cube-6 {
+  margin-top: calc(1 * 5px);
+}
+
+#cube-11 {
+  margin-top: calc(1 * 5px);
+}
+
+#cube-16 {
+  margin-top: calc(1 * 5px);
+}
+
+#cube-21 {
+  margin-top: calc(1 * 5px);
+}
+
+#row-1 {
+  margin-left: calc(1 * -10px);
+}
+
+#cube-2 {
+  margin-top: calc(2 * 5px);
+}
+
+#cube-7 {
+  margin-top: calc(2 * 5px);
+}
+
+#cube-12 {
+  margin-top: calc(2 * 5px);
+}
+
+#cube-17 {
+  margin-top: calc(2 * 5px);
+}
+
+#cube-22 {
+  margin-top: calc(2 * 5px);
+}
+
+#row-2 {
+  margin-left: calc(2 * -10px);
+}
+
+#cube-3 {
+  margin-top: calc(3 * 5px);
+}
+
+#cube-8 {
+  margin-top: calc(3 * 5px);
+}
+
+#cube-13 {
+  margin-top: calc(3 * 5px);
+}
+
+#cube-18 {
+  margin-top: calc(3 * 5px);
+}
+
+#cube-23 {
+  margin-top: calc(3 * 5px);
+}
+
+#row-3 {
+  margin-left: calc(3 * -10px);
+}
+
+#cube-4 {
+  margin-top: calc(4 * 5px);
+}
+
+#cube-9 {
+  margin-top: calc(4 * 5px);
+}
+
+#cube-14 {
+  margin-top: calc(4 * 5px);
+}
+
+#cube-19 {
+  margin-top: calc(4 * 5px);
+}
+
+#cube-24 {
+  margin-top: calc(4 * 5px);
+}
+
+#row-4 {
+  margin-left: calc(4 * -10px);
+}
+
+#cube-5 {
+  margin-top: calc(5 * 5px);
+}
+
+#cube-10 {
+  margin-top: calc(5 * 5px);
+}
+
+#cube-15 {
+  margin-top: calc(5 * 5px);
+}
+
+#cube-20 {
+  margin-top: calc(5 * 5px);
+}
+
+#cube-25 {
+  margin-top: calc(5 * 5px);
+}
+
+#row-5 {
+  margin-left: calc(5 * -10px);
+}
+
+.schultz-table-wrapper {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+  inset: 0;
+}
+
+.schultz-table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.button-wrapper-highscores {
+  margin: 65% 15%;
+}
+
+.button-wrapper-reset {
+  margin-top: 100%;
+}
+
+.button {
+  margin: 0 auto;
+  --cube-width: 140px;
+  --cube-aspect: 3/1;
+}
+
+.button .top .contents {
+  padding-top: calc(var(--cube-width) * 0.1);
+  font-size: 40px !important;
+}
+
+.button .top::before {
+  -webkit-transform: translateZ(calc(var(--cube-width) * -0.7)) !important;
+          transform: translateZ(calc(var(--cube-width) * -0.7)) !important;
+}
+/*# sourceMappingURL=schultztable.css.map */

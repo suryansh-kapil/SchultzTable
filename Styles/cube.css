@@ -1,0 +1,125 @@
+:root {
+  --cube-width: 80px;
+  --cube-aspect: 1.5/1;
+  --cube-color: turquoise;
+  --font-size: calc(80px * 0.7);
+  --cube-x: -40deg;
+  --cube-y: -12deg;
+}
+
+* {
+  outline: none;
+}
+
+.cube,
+.cube-button {
+  position: relative;
+  width: var(--cube-width);
+  aspect-ratio: var(--cube-aspect);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(var(--cube-x)) rotateY(var(--cube-y));
+          transform: rotateX(var(--cube-x)) rotateY(var(--cube-y));
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin: 0 1.7em;
+}
+
+.cube .top,
+.cube-button .top {
+  position: absolute;
+  inset: 0;
+  width: var(--cube-width);
+  aspect-ratio: 1/1;
+  background: #1a1a1a;
+  -webkit-transform: rotateX(90deg) translateZ(calc(var(--cube-width) / 2));
+          transform: rotateX(90deg) translateZ(calc(var(--cube-width) / 2));
+}
+
+.cube .top .contents,
+.cube-button .top .contents {
+  position: fixed;
+  color: var(--cube-color);
+  display: inline;
+  text-align: center;
+  font-size: var(--font-size);
+  margin-top: calc(var(--font-size) * 0.2);
+}
+
+.cube .top::before,
+.cube-button .top::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: var(--cube-width);
+  aspect-ratio: 1/1;
+  background: var(--cube-color);
+  -webkit-transform: translateZ(calc(var(--cube-width) * -1));
+          transform: translateZ(calc(var(--cube-width) * -1));
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+.cube div,
+.cube-button div {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  aspect-ratio: var(--cube-aspect);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.cube div span,
+.cube-button div span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(var(--cube-color)));
+  background: linear-gradient(#1a1a1a, var(--cube-color));
+  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(calc(var(--cube-width) / 2));
+          transform: rotateY(calc(90deg * var(--i))) translateZ(calc(var(--cube-width) / 2));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cube .container,
+.cube-button .container {
+  display: none;
+  color: white;
+  mix-blend-mode: hard-light;
+}
+
+.cube:hover,
+.cube-button:hover {
+  -webkit-transform: scale(1.1) rotateX(-5deg) rotateY(-5deg);
+          transform: scale(1.1) rotateX(-5deg) rotateY(-5deg);
+  cursor: pointer;
+}
+
+.cube:hover .container,
+.cube-button:hover .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selected {
+  -webkit-transform: scale(1) rotateX(-5deg) rotateY(-5deg);
+          transform: scale(1) rotateX(-5deg) rotateY(-5deg);
+}
+
+.selected .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=cube.css.map */
